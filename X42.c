@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char *argv[]) {
+  if (argc > 1 && strcmp(argv[1], "42") == 0) {
+    fprintf(stderr, "It depends!\n");
+    exit(EXIT_FAILURE);
+  }
+  printf("What is the meaning of life?\n");
+  return 0;
+}
+
