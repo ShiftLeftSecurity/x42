@@ -28,8 +28,8 @@ build-llvm:
 build-cpp:
 	@g++ $(CPP_FILE) -o $(CPP_OUT)
 
-run-cpp: build-c
-	@./$(CPP_OUT)
+run-cpp: build-cpp
+	@./$(CPP_OUT) 42
 
 build-c:
 	@gcc $(C_FILE) -o $(C_OUT)
