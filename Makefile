@@ -20,7 +20,7 @@ build-go:
 	@go build -o $(GO_OUT) $(GO_FILE)
 
 run-go: build-go
-	./$(GO_OUT)
+	@./$(GO_OUT) 42
 
 build-llvm:
 	@clang -S -emit-llvm $(C_FILE) -o $(LLVM_OUT)
@@ -35,7 +35,7 @@ build-c:
 	@gcc $(C_FILE) -o $(C_OUT)
 
 run-c: build-c
-	@./$(C_OUT)
+	@./$(C_OUT) 42
 
 javac:
 	@javac $(JAVA_FILE)
