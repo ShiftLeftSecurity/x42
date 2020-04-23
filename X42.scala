@@ -1,8 +1,9 @@
 object X42 {
   def main(args: Array[String]) = {
     if (args.length > 0 && args(0) == "42") {
-      throw new Exception("It depends!")
+      System.err.println("It depends!");
+      System.exit(42);
     }
-    println("What is the meaning of life?")
+    System.out.println("What is the meaning of life?");
   }
 }

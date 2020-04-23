@@ -1,12 +1,12 @@
 package main
 
-import "fmt"
 import "os"
 
 func main() {
 	if len(os.Args) > 1 && os.Args[1] == "42" {
-		panic("It depends!")
+		os.Stderr.WriteString("It depends!\n")
+		os.Exit(42)
 	}
-	fmt.Println("What is the meaning of life?")
+	os.Stdout.WriteString("What is the meaning of life?\n")
 }
 

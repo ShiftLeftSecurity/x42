@@ -36,7 +36,7 @@ define dso_local i32 @main(i32, i8**) #0 {
 14:                                               ; preds = %8
   %15 = load %struct._IO_FILE*, %struct._IO_FILE** @stderr, align 8
   %16 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %15, i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.1, i64 0, i64 0))
-  call void @exit(i32 1) #5
+  call void @exit(i32 42) #5
   unreachable
 
 17:                                               ; preds = %8, %2
@@ -65,4 +65,4 @@ attributes #5 = { noreturn nounwind }
 !llvm.ident = !{!1}
 
 !0 = !{i32 1, !"wchar_size", i32 4}
-!1 = !{!"clang version 9.0.1-11 "}
+!1 = !{!"clang version 9.0.1-12 "}

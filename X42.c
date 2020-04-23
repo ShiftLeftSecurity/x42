@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
   if (argc > 1 && strcmp(argv[1], "42") == 0) {
     fprintf(stderr, "It depends!\n");
-    exit(EXIT_FAILURE);
+    exit(42);
   }
   printf("What is the meaning of life?\n");
   return 0;
