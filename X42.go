@@ -8,5 +8,6 @@ func main() {
 		os.Exit(42)
 	}
 	os.Stdout.WriteString("What is the meaning of life?\n")
+	os.Exit(0)
 }
 

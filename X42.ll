@@ -41,7 +41,8 @@ define dso_local i32 @main(i32, i8**) #0 {
 
 17:                                               ; preds = %8, %2
   %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30 x i8]* @.str.2, i64 0, i64 0))
-  ret i32 0
+  call void @exit(i32 0) #5
+  unreachable
 }
 
 ; Function Attrs: nounwind readonly

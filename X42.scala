@@ -5,5 +5,6 @@ object X42 {
       System.exit(42);
     }
     System.out.println("What is the meaning of life?");
+    System.exit(0);
   }
 }

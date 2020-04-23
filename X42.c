@@ -8,6 +8,6 @@ int main(int argc, char *argv[]) {
     exit(42);
   }
   printf("What is the meaning of life?\n");
-  return 0;
+  exit(0);
 }
 
