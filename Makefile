@@ -47,7 +47,7 @@ run-jar: jar
 	@java -jar $(JAR_FILE) 42
 
 scalac:
-	@scalac $(SCALA_FILE)
+	@scalac -g:vars $(SCALA_FILE)
 
 jar-scala: javac
 	@jar cfm $(JAR_FILE) $(JAR_MANIFEST) $(JAVA_BYTECODE_OUT)
