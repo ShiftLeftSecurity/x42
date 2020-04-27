@@ -38,7 +38,7 @@ run-c: build-c
 	@./$(C_OUT) 42
 
 javac:
-	@javac $(JAVA_FILE)
+	@javac -g $(JAVA_FILE)
 
 jar: javac
 	@jar cfm $(JAR_FILE) $(JAR_MANIFEST) $(JAVA_BYTECODE_OUT)
