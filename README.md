@@ -4,5 +4,5 @@ This is a sample project which contains a simple program written in multiple dif
 
 ### Getting Started
 
-Use the Makefile to build the binary for your system and language of choice.
+Use the Makefile in the individual language directories to build the binaries for your system.
 
