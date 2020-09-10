@@ -1,0 +1,5 @@
+PYTHON_EXECUTABLE = python
+PY_FILE = x42.py
+
+run:
+	@$(PYTHON_EXECUTABLE) $(PY_FILE) 42
